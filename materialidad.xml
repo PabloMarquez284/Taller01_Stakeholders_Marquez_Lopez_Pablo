@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="materialidad.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<empresa_sostenible>
+    <stakeholders>
+        <stakeholder importancia="Alta">
+            <nombre>Comunidad de Desarrollo Global</nombre>
+            <descripcion>Colaboradores externos y ecosistema de código abierto que aportan resiliencia al proyecto.</descripcion>
+        </stakeholder>
+        <stakeholder importancia="Alta">
+            <nombre>Medio Ambiente como actor pasivo</nombre>
+            <descripcion>La naturaleza sufre las consecuencias del consumo energético y los residuos electrónicos.</descripcion>
+        </stakeholder>
+        <stakeholder importancia="Alta">
+            <nombre>Futuras Generaciones</nombre>
+            <descripcion>Entidades que heredarán las infraestructuras y el impacto de los recursos consumidos hoy.</descripcion>
+        </stakeholder>
+    </stakeholders>
+    <temas_materiales>
+        <tema_material impacto_asg="Ambiental">
+            <titulo>El Vértice Ambiental: La Eficiencia de lo Invisible</titulo>
+            <descripcion>Diseño de algoritmos que minimizan el uso de CPU y memoria para reducir la demanda térmica[cite: 112, 113].</descripcion>
+        </tema_material>
+        <tema_material impacto_asg="Social">
+            <titulo>El Vértice Social: La Tecnología como Herramienta de Inclusión</titulo>
+            <descripcion>Garantía de inclusión para personas con diversas capacidades y respeto a la dignidad[cite: 117, 118].</descripcion>
+        </tema_material>
+        <tema_material impacto_asg="Gobernanza">
+            <titulo>El Vértice Gobernanza: La Ética detrás de la Gestión</titulo>
+            <descripcion>Estructuras de mando que aseguran decisiones automatizadas éticas y sin corrupción[cite: 120, 121, 122].</descripcion>
+        </tema_material>
+    </temas_materiales>
+</empresa_sostenible>

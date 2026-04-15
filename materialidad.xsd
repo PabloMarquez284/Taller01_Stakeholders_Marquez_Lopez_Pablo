@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <xs:element name="empresa_sostenible">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stakeholders" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="temas_materiales" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="stakeholders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stakeholder" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="stakeholder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="descripcion" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="importancia" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="nombre">
+    <xs:simpleType>
+      <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="descripcion">
+    <xs:simpleType>
+      <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="temas_materiales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="tema_material" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tema_material">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="descripcion" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="impacto_asg" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="titulo">
+    <xs:simpleType>
+      <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>
